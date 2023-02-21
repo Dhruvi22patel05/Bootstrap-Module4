@@ -1,6 +1,7 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
-const sass        = require('gulp-sass');
+// const sass        = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
